@@ -13,25 +13,22 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ReservationFactoryTest {
 
-    @Test
-    public void build(){
-        Reservation reservation = ReservationFactory.build("L1",
-                "07 May 2022",ReservationStatusFactory.build("T323",
-                        "Needs payment"));
-        System.out.println(reservation);
-        assertNotNull(reservation);
+   // @Test
+   // public void build(){
+      //  Reservation reservation = ReservationFactory.build("L1",
+        //        "07 May 2022",ReservationStatusFactory.build("T323",
+       //                 "Needs payment"));
+       // System.out.println(reservation);
+      //  assertNotNull(reservation);
     }
 
 
-    @Test
-    @DisplayName("Test Throwing an IllegalArgumentException for date of reservation.")
-    public void buildWithError(){
-        Exception exception = assertThrows(IllegalArgumentException.class, () ->
-                ReservationFactory.build("L1","",
-                        ReservationStatusFactory.build("T323",
-                                "Needs payment")));
-        System.out.println("Date of reservation: "+ exception.getMessage());
+   // @Test
+   // @DisplayName("Test Throwing an IllegalArgumentException for date of reservation.")
+  //  public void buildWithError(){
+       // Exception exception = assertThrows(IllegalArgumentException.class, () ->
+        //        ReservationFactory.build("L1","",
+//
+  //  }
 
-    }
-
-}
+//}
