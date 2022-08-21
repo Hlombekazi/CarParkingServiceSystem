@@ -5,6 +5,9 @@
  */
 package za.ac.cput.entity;
 
+
+import za.ac.cput.service.PaymentService;
+
 public class Payment {
     private String paymentId ;
     private  double paymentAmount;
@@ -39,6 +42,10 @@ public class Payment {
 
     public String getPaymentID() {
         return paymentId;
+    }
+
+    public PaymentService orElse(Object o) {
+        return null ;
     }
 
 
